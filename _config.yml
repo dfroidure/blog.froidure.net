@@ -1,7 +1,7 @@
 #######################
 # Configuration du thème
 #######################
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "dark" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 after_footer_scripts: []
 
