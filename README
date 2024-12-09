@@ -22,17 +22,14 @@ Blog dédié au partage d'expériences en administration système Linux, sécuri
 
 ### Installation
 
-```bash
-bundle install
-```
+    bundle install
 
-Lancement du serveur de développement
-```bash
-bundle exec jekyll serve
-```
+### Lancement du serveur de développement
 
-Le site sera accessible sur http://localhost:4000
+    bundle exec jekyll serve
 
-#### Licence
+Le site sera accessible sur [http://localhost:4000](http://localhost:4000)
+
+## Licence
 
 Le contenu des articles est sous licence [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
