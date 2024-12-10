@@ -7,6 +7,7 @@ tags:
   - Introduction
   - Personnel
 header:
+  overlay_image: /assets/images/2024-12-07-pensine-banner.png
   overlay_color: "#333"
   overlay_filter: "0.5"
 ---
@@ -17,9 +18,7 @@ Pour ceux qui ne connaissent pas Harry Potter, une Pensine est un artefact magiq
 
 En tant qu'administrateur système Linux passionné par la sécurité, j'ai souvent ressenti le besoin de documenter mes découvertes techniques. Au fil des années, j'ai accumulé de nombreuses notes, solutions et retours d'expérience qui méritaient un meilleur sort que mes fichiers Markdown éparpillés.
 
-Ce blog répond à plusieurs objectifs :
-
-> **Documentation vivante** : Transformer mes notes personnelles en ressources structurées et accessibles. Une sorte de "moi du futur, tu me remercieras" numérique.
+Ce blog a pour but de transformer mes notes personnelles en ressources structurées et accessibles. Une sorte de "moi du futur, tu me remercieras" numérique.
 
 Mais soyons honnêtes, ce n'est pas uniquement pour moi. Dans notre domaine technique en constante évolution, le partage de connaissances est crucial. J'ai énormément appris grâce aux blogs et articles d'autres professionnels. C'est maintenant à mon tour de contribuer à cette communauté d'entraide.
 
