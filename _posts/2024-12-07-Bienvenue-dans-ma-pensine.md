@@ -7,7 +7,7 @@ tags:
   - Introduction
   - Personnel
 header:
-  overlay_image: /assets/images/2024-12-07-pensine-banner.png
+  overlay_image: /assets/images/headers/2024-12-07-pensine-banner.png
   overlay_color: "#333"
   overlay_filter: "0.5"
 ---
