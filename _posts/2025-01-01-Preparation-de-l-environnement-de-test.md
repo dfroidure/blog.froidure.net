@@ -19,9 +19,9 @@ Tout blog technique qui se respecte nécessite un environnement de test fiable. 
 
 ## Le matériel :
 
-Mon choix s'est porté sur un **HP Prodesk mini** compact et économe en énergie. Il sera capable de gerer plusieurs VMs de tests avec sa configuration :
-- Processeur 
--  Go de RAM
+Mon choix s'est porté sur un **HP Prodesk mini G5** compact et économe en énergie. Il sera capable de gerer plusieurs VMs de tests avec sa configuration :
+- Processeur i5-9500T (6 coeurs)
+- 16 Go de RAM
 - SSD de 256 Go
 - Consommation électrique réduite
 
@@ -77,19 +77,32 @@ Proxmox s'est imposé pour plusieurs raisons :
 ## Installation et configuration de base
 
 L'installation de Proxmox a été remarquablement simple :
-1. Téléchargement de l'ISO sur le site officiel
-Ajouter image
-2. Création d'une clé USB bootable
-Ajouter image
-3. Installation en suivant l'assistant
-Ajouter image
+1. Téléchargement de l'ISO sur [le site officiel](https://www.proxmox.com/en/downloads/proxmox-virtual-environment/iso)
+[Téléchargement de Proxmox](/assets/images/posts/2025-01-proxmox/01-installation.png)
+2. Création d'une clé USB bootable avec [BalenaEtcher](https://etcher.balena.io/#download-etcher)
+[BalenaEtcher](/assets/images/posts/2025-01-proxmox/02-balena.png)
+3. Installation en CLI en suivant l'assistant
+[Proxmox CLI](/assets/images/posts/2025-01-proxmox/03-proxmox-cli.png)
 4. Configuration réseau basique
-Ajouter image
+[Proxmox réseau](/assets/images/posts/2025-01-proxmox/04-proxmox-network.png)
 
 ## Les premiers pas
 
-Afin de m'assurer que tout fonctionne correctement, j'ai créé une machine virtuelle Ubuntu Server 24.10 (j'avais l'ISO sous la main).
-Ajouter image
+Afin de m'assurer que tout fonctionne correctement, j'ai créé une machine virtuelle [Ubuntu Server 24.10](https://releases.ubuntu.com/oracular/) (j'avais l'ISO sous la main).
+
+[Upload ubuntu server iso](/assets/images/posts/2025-01-proxmox/05-ubuntu-iso.png)
+
+```bash
+starting file import from: /var/tmp/pveupload-18c2633a13f395537db85a1bf16f0a9a
+target node: pve
+target file: /var/lib/vz/template/iso/ubuntu-24.10-live-server-amd64.iso
+file size is: 2098460672
+command: cp -- /var/tmp/pveupload-18c2633a13f395537db85a1bf16f0a9a /var/lib/vz/template/iso/ubuntu-24.10-live-server-amd64.iso
+finished file import successfully
+TASK OK
+```
+
+[Install Ubuntu](/assets/images/posts/2025-01-proxmox/06-ubuntu-install.png)
 
 ## La suite ?
 
