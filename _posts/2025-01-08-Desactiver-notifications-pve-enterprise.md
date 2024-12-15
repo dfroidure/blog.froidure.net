@@ -34,7 +34,7 @@ La solution consiste à désactiver le dépot Enterprise et configurer le dépot
 ```bash
 cd /etc/apt/sources.list.d
 mv pve-enterprise.list pve-enterprise.list.disabled
-echo 'deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription' > pve-community.list
+echo 'deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription' > pve-community.list
 apt update
 apt upgrade -y
 ```
