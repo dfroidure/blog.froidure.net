@@ -1,5 +1,5 @@
 ---
-title: "Preparation de l'environnement"
+title: "Désactiver les notifications Enterprise Edition"
 date: 2025-01-08 09:00:00 +0100
 categories:
   - Infrastructure
@@ -27,7 +27,34 @@ Par défaut, Proxmox VE est configuré pour utiliser les dapots Enterprise Editi
 
 [Souscription invalide](/assets/images/posts/2025-01-proxmox/pve-invalid-sub.png)
 
-## Solution
+## Solution (new)
+
+Ok, j'avais écris tout ce qu'il y a en dessous avant de découvrir ce [petit script magique](https://community-scripts.github.io/ProxmoxVE/scripts?id=post-pve-install) qui permet de faire pleins de choses en une fois en post-install de Proxmox :
+
+```bash
+    ____ _    ________   ____             __     ____           __        ____
+   / __ \ |  / / ____/  / __ \____  _____/ /_   /  _/___  _____/ /_____ _/ / /
+  / /_/ / | / / __/    / /_/ / __ \/ ___/ __/   / // __ \/ ___/ __/ __ `/ / /
+ / ____/| |/ / /___   / ____/ /_/ (__  ) /_   _/ // / / (__  ) /_/ /_/ / / /
+/_/     |___/_____/  /_/    \____/____/\__/  /___/_/ /_/____/\__/\__,_/_/_/
+
+ ✓ Corrected Proxmox VE Sources
+ ✓ Disabled 'pve-enterprise' repository
+ ✓ Enabled 'pve-no-subscription' repository
+ ✓ Corrected 'ceph package repositories'
+ ✓ Added 'pvetest' repository
+ ✓ Disabled subscription nag (Delete browser cache)
+ ✓ Disabled high availability
+ ✓ Updated Proxmox VE
+ ✗ Selected no to Rebooting Proxmox VE (Reboot recommended)
+ ✓ Completed Post Install Routines
+```
+
+Il est d'ailleurs conseillé de répondre "yes" a toutes les questions.
+
+Cela fait un moment que je n'ai pas utilisé Proxmox, je suis passé sur du baremetal depuis quelques années, mais pour ce blog c'était tout indiqué afin d'avancer dans mon apprentissage, mais aussi le partager avec ceux qui liront un jour ces pages.
+
+## Solution (old)
 
 La solution consiste à désactiver le dépot Enterprise et configurer le dépot Community à la place. C'est faisable soit via l'interface web (via l'outil "shell" en haut a droite), soit en CLI en se connectant en SSH à la machine. Ici vous taperez :
 

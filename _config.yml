@@ -19,6 +19,7 @@ repository: "dfroidure/blog.froidure.net"
 words_per_minute: 160
 breadcrumbs: true
 masthead_title: "La pensine"
+future: true
 
 #######################
 # Profil auteur
